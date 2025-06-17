@@ -1,3 +1,4 @@
+/* eslint-disable prettier/prettier */
 import { ReactNode } from 'react'
 
 interface Props {
