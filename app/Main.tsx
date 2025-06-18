@@ -1,10 +1,11 @@
 import siteMetadata from '@/data/siteMetadata'
 import Link from '@/components/Link'
+import Image from 'next/image'
 
 export default function Home() {
   return (
     <>
-      <div className="relative isolate overflow-hidden pt-14">
+      <div className="relative isolate overflow-hidden rounded-2xl pt-14">
         <div
           className="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80"
           aria-hidden="true"
@@ -18,7 +19,15 @@ export default function Home() {
           />
         </div>
         <div className="mx-auto max-w-2xl py-32 sm:py-48 lg:py-56">
-          <div className="text-center">
+          <div className="flex flex-col items-center text-center">
+            <div className="relative mb-8 flex h-48 w-48 justify-center">
+              <Image
+                src="/static/images/hsiao-cover.png"
+                alt="Hsiao-Tsu Huang Avatar"
+                fill
+                className="rounded-full object-cover"
+              />
+            </div>
             <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl dark:text-white">
               Hsiao-Tsu Huang
             </h1>
